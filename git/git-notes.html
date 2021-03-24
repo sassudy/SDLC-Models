@@ -18,7 +18,7 @@
 
     <div>
         <h1 style="font-size:200%" >Differences between Git and GitHub</h1>
-        <hr>
+       
         <table border="1" align="center">
             <tr>
                 <th>Git</th>
@@ -32,21 +32,22 @@
                     Github is a Hosting and Collaboration provider which has the purpose to host Your Git repositories. <br> GitHub is a web based solution.
                 </td>
             </tr>
+            </table>
     </div>
-
+    <hr>
     <div>
         <h2 style="font-size:200%">Git Repositories, Branches and Commits</h2>
         <p>A Repository is the location where the code history is stored. <br> Inside the Repository we have a Branch, which is the folder that contains our Commits. <br> A Commit stands for the different stages and versions of our sourcecode which we save in the Branch.</p>
         <p>Git does not create copies of Your commits, it tracks changes You make to the code.</p>
         <p></p>
-        <h3><code>$git init</code> -Initializing a Git repository, telling Git to manage the project in this folder. </h3><!--musta taustaga ja valge v'rvi tekstiga-->
-        <h3><code>$git add .</code> -Adding all the project files to the tracking logic of Git.</h3>
-        <h3><code>$git status</code> -View the changes made.</h3>
-        <h3><code>$git commit -m "descriptive text here"</code> -Telling Git to commit to the changes and add our code to the Branch, saving it. <br> Adding -m to give the Commit a name.</h3>
-        <h3><code>$git branch</code> -Git automatically creates a Branch. Can see the branches we have.</h3>
-        <h3><code>$git log</code> -View the commits created.</h3>
-        <h3><code>$git checkout --.</code> -You can delete the last commit You made to the code.</h3>
-        <h3><code>$git checkout -b say-something</code> -Create a new branch.</h3>
+        <h3><code>$git init</code> -Initializing a Git repository, telling Git to manage the project in this folder. <br> <!--musta taustaga ja valge v'rvi tekstiga-->
+        <code>$git add .</code> -Adding all the project files to the tracking logic of Git. <br>
+        <code>$git status</code> -View the changes made. <br>
+        <code>$git commit -m "descriptive text here"</code> -Telling Git to commit to the changes and add our code to the Branch, saving it. <br> Adding -m to give the Commit a name. <br>
+        <code>$git branch</code> -Git automatically creates a Branch. Can see the branches we have. <br>
+        <code>$git log</code> -View the commits created. <br>
+        <code>$git checkout --.</code> -You can delete the last commit You made to the code. <br>
+        <code>$git checkout -b say-something</code> -Create a new branch.</h3>
     </div>
     <hr>
 
@@ -56,8 +57,9 @@
         <p>Create a GitHub repository, add a name for it.</p>
         <p>Next You have to connect Your file to the repository, for this, before you have any files, GitHub also provides hints.</p>
         <p>To begin the process you add the following lines to the terminal</p>
-        <code>$git init</code> <code> $git add .</code> <code> $git commit -m "descriptive text here"</code>
-        <p>Next in the hints GitHub provides you will have the link to connect <code>$git remote add origin (link)</code></p>
+        <h3>
+        <code>$git init</code> <code> $git add .</code> <code> $git commit -m "descriptive text here"</code> <br>
+        <p>Next in the hints GitHub provides you will have the link to connect <code>$git remote add origin (link)</code></p> <br>
         <p>Now You need to push your files <code>$git push -u origin master</code></p>
         <hr>
         <p>To push files to an already existing and connected repository add the following codes</p>
@@ -69,6 +71,7 @@
         <hr>
         <p>To access the updates made in GitHub we can fetch the files <code>$git fetch</code></p>
         <p>To connect the local file to the origin file <code>$git checkout master</code> <code> $git merge origin/master </code> </p>
+    </h3>
     </div>
   
    
